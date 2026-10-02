@@ -52,6 +52,29 @@ Approximately **3000 simulation cases** are used for the data-driven analysis.
 
 ---
 
+## 💼 Business Problem
+
+Chemical process industries need to operate reactors under conditions that provide the required product conversion while avoiding unnecessary operating costs and excessive trial-and-error during process development.
+
+For a PFR reactor, changes in operating conditions such as temperature, pressure, reactor volume, residence time, and heat load can affect conversion. Evaluating many combinations directly through process simulation can be time-consuming, making it difficult to quickly explore the operating space.
+
+This project addresses this problem by creating a **data-driven reactor analysis and decision-support workflow**.
+
+DWSIM is used to generate simulation data for different operating conditions. Machine-learning models are then trained to learn the relationship between process variables and reactor conversion. SQL provides structured data analysis, Power BI provides interactive process monitoring and visualization, and Streamlit provides an accessible interface for prediction and operating-condition exploration.
+
+### Business Value
+
+The system can help to:
+
+- Reduce repetitive simulation-based analysis during early-stage process studies.
+- Quickly estimate reactor conversion for different operating conditions.
+- Explore the relationship between operating variables and reactor performance.
+- Identify candidate operating conditions corresponding to a desired conversion.
+- Centralize and query large amounts of simulation data using SQL.
+- Provide interactive dashboards for engineering and process-data analysis.
+- Provide a user-friendly interface for ML-based conversion prediction.
+
+
 ## 🔄 Project Workflow
 
 ```text
@@ -102,27 +125,7 @@ Approximately **3000 simulation cases** are used for the data-driven analysis.
                       │
                       ▼
           Target Conversion Search
-## 💼 Business Problem
 
-Chemical process industries need to operate reactors under conditions that provide the required product conversion while avoiding unnecessary operating costs and excessive trial-and-error during process development.
-
-For a PFR reactor, changes in operating conditions such as temperature, pressure, reactor volume, residence time, and heat load can affect conversion. Evaluating many combinations directly through process simulation can be time-consuming, making it difficult to quickly explore the operating space.
-
-This project addresses this problem by creating a **data-driven reactor analysis and decision-support workflow**.
-
-DWSIM is used to generate simulation data for different operating conditions. Machine-learning models are then trained to learn the relationship between process variables and reactor conversion. SQL provides structured data analysis, Power BI provides interactive process monitoring and visualization, and Streamlit provides an accessible interface for prediction and operating-condition exploration.
-
-### Business Value
-
-The system can help to:
-
-- Reduce repetitive simulation-based analysis during early-stage process studies.
-- Quickly estimate reactor conversion for different operating conditions.
-- Explore the relationship between operating variables and reactor performance.
-- Identify candidate operating conditions corresponding to a desired conversion.
-- Centralize and query large amounts of simulation data using SQL.
-- Provide interactive dashboards for engineering and process-data analysis.
-- Provide a user-friendly interface for ML-based conversion prediction.
 - Support faster comparison of operating scenarios before detailed process validation.
 
 The system is intended as a **decision-support and analysis tool**, with final operating conditions requiring validation through the underlying process simulation and appropriate engineering constraints.
